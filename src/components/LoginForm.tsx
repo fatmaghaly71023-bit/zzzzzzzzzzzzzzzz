@@ -81,9 +81,10 @@ export const LoginForm = ({ onLogin }: LoginFormProps) => {
   };
 
   return (
-    <div className="min-h-screen bg-gradient-to-br from-blue-50 via-white to-green-50 flex flex-col">
+    <div className="min-h-screen flex flex-col content-overlay">
       <div className="flex-1 flex items-center justify-center p-4">
-        <Card className="w-full max-w-md shadow-2xl animate-scale-in transition-all duration-500 hover:shadow-3xl">
+        <div className="w-full max-w-md">
+          <Card className="shadow-2xl animate-scale-in transition-all duration-500 hover:shadow-3xl bg-card/90 backdrop-blur-md border-border/50">
           <CardHeader className="text-center">
             <div className="mx-auto mb-4 p-3 bg-gradient-to-r from-blue-600 to-green-600 rounded-full w-16 h-16 flex items-center justify-center shadow-lg animate-pulse">
               <Network className="h-8 w-8 text-white" />
@@ -180,6 +181,17 @@ export const LoginForm = ({ onLogin }: LoginFormProps) => {
             </form>
           </CardContent>
         </Card>
+          
+          {/* Islamic Verse */}
+          <div className="mt-8 text-center animate-fade-in">
+            <p className="golden-text text-lg font-bold leading-relaxed px-4" style={{ fontFamily: 'serif' }}>
+              إِنَّ اللَّهَ وَمَلَائِكَتَهُ يُصَلُّونَ عَلَى النَّبِيِّ ۚ يَا أَيُّهَا الَّذِينَ آمَنُوا صَلُّوا عَلَيْهِ وَسَلِّمُوا تَسْلِيمًا
+            </p>
+            <p className="text-sm text-muted-foreground mt-2 opacity-80">
+              صدق الله العظيم
+            </p>
+          </div>
+        </div>
       </div>
       <Footer />
     </div>

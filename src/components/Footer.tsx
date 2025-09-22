@@ -12,7 +12,7 @@ export const Footer = () => {
   };
 
   return (
-    <footer className="mt-auto bg-gradient-to-r from-blue-600 to-green-600 text-white">
+    <footer className="mt-auto bg-gradient-to-r from-blue-600/90 to-green-600/90 text-white backdrop-blur-md">
       <div className="container mx-auto px-4 py-8">
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8 items-center">
           {/* Logo and Title */}
